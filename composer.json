@@ -1,6 +1,6 @@
 {
     "name": "kyle-noland/laravel-base-repository",
-    "description": "Flexible Laravel repository pattern system for use with Eloquent ORM",
+    "description": "A flexible Laravel repository pattern foundation for working with Eloquent ORM",
     "authors": [
         {
             "name": "Kyle Noland",
