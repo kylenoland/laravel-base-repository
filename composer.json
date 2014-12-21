@@ -1,0 +1,20 @@
+{
+    "name": "kyle-noland/laravel-base-repository",
+    "description": "Flexible Laravel repository pattern system for use with Eloquent ORM",
+    "authors": [
+        {
+            "name": "Kyle Noland",
+            "email": "kylenoland@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "KyleNoland\\LaravelBaseRepository": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
