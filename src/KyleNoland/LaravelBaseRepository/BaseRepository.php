@@ -1,5 +1,7 @@
 <?php namespace KyleNoland\LaravelBaseRepository;
 
+use Illuminate\Database\Eloquent\Collection;
+
 abstract class BaseRepository implements BaseRepositoryInterface {
 
 	/**
@@ -106,6 +108,26 @@ abstract class BaseRepository implements BaseRepositoryInterface {
 		$this->unsetClauses();
 
 		return $this->model->create($data);
+	}
+
+
+	/**
+	 * Create one or more new model records in the database
+	 * 
+	 * @param array $data
+	 *
+	 * @return \Illuminate\Database\Eloquent\Collection
+	 */
+	public function createMultiple(array $data)
+	{
+		$models = new Collection();
+
+		foreach($data as $d)
+		{
+			$models->push($this->create($d));
+		}
+
+		return $models;
 	}
 
 

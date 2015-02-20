@@ -8,6 +8,8 @@ interface BaseRepositoryInterface {
 
 	public function create(array $data);
 
+	public function createMultiple(array $data);
+
 	public function delete();
 
 	public function deleteById($id);
